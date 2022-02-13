@@ -1,0 +1,63 @@
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-image: url("pexels-moose-photos-1037999.jpg");
+    background-size: 100%;
+    height: 270px;
+    width: 400px;
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    border-radius: 6px;
+    border-bottom: 3px darkgrey;
+    padding: 25px;
+    border-bottom-style:groove;
+    border-bottom-width: thick;
+    box-shadow: whitesmoke 5px 5px 8px;
+    animation: bounce 0.8s;
+    animation-timing-function: ease-out;
+    border: solid white 2px;
+}
+.item1 {
+    color:floralwhite;
+    font-size: 22px;
+    margin: 10px;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#one {
+    font-weight: 50px;
+    color: #c0e4df;
+    font-size: 50px; 
+    height: 70px;
+}
+
+.btn:hover {
+    transform: scale(1.025,1.025);
+    transition: transform 0.3s;
+}
+
+.btn:active {
+    transform: scale(0.970);
+    box-shadow: gray 5px 5px 3px;
+    transition: transform 0.3s, box-shadow 0.4s; /*Alg alg property alg alg time mein transition krenge*/
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1.1112,1.1112);
+     }
+    50% {
+        transform: translateY(8px);
+    }
+    
+}
